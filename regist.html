@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Registration</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <style>
+      form {
+        margin: 5px auto;
+        width: 600px;
+        height: 500px;
+        border: 3px solid rgb(227, 245, 245);
+        background-color: rgb(235, 238, 238);
+      }
+      p {
+        border: 1px dashed rgb(111, 170, 170);
+        background-color: rgb(168, 216, 216);
+        width: 90%;
+        margin: 10px 20px;
+      }
+      span {
+        color: red;
+      }
+      .w50 {
+        width: 35%;
+        background-color: rgb(148, 231, 231);
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="links">
+        <ul>
+          <a href="index.html">
+            <li>Home</li>
+          </a>
+          <a href="desc.html">
+            <li>Road Map</li>
+          </a>
+          <a href="regist.html">
+            <li>Registartion Form</li>
+          </a>
+          <a href="https://internal.iti.gov.eg/" target="_blank">
+            <li>Contact</li>
+          </a>
+        </ul>
+      </div>
+      <div class="logo">
+        <img src="img/ITI_logo.png" />
+      </div>
+    </header>
+
+    <form action="">
+      <h3 style="margin: 10px 20px; color: rgb(9, 99, 99);">
+        Register - Creat account
+      </h3>
+      <p style="border: 1px dashed rgb(152, 236, 236); padding: 2px;">
+        Field marked <span>*</span> are compulsory field
+      </p>
+
+      <table style="margin: auto; padding: 10px 15px;">
+        <tbody>
+          <tr>
+            <td class="w50" style="text-align: right;">
+              <label for="name">Your Name:<span>*</span></label>
+            </td>
+            <td colspan="4">
+              <input type="text" name="name" id="" style="width: 60%;" />
+            </td>
+          </tr>
+          <tr style="margin-top: 10px;">
+            <td class="w50" style="text-align: right;">
+              <label for="mail">Your Email ID:<span>*</span></label>
+            </td>
+            <td style="text-align: justify;">
+              <input type="email" name="mail" id="" style="width: 80%;" />
+            </td>
+          </tr>
+          <tr style="padding-top: 10px;">
+            <td class="w50" style="text-align: right;">
+              <label for="mail">Alternate Email ID:<span>*</span></label>
+            </td>
+            <td>
+              <input type="email" name="mail" id="" style="width: 80%;" />
+            </td>
+          </tr>
+          <tr>
+            <td class="w50" style="text-align: right;">
+              <label for="fff">Your Phone: </label>
+            </td>
+            <td>
+              <div style="float: left; width: 25%;">
+                <span style="color: black; font-size: 13px;">Country code </span
+                >-<br />
+                <input
+                  type="text"
+                  name="contry"
+                  id="contry"
+                  pattern="[A-Za-z]{3}"
+                  style="width: 80%;"
+                />
+                -
+              </div>
+              <div style="float: left; width: 20%;">
+                <span style="color: black; font-size: 13px;">city code </span
+                >-<br />
+                <input
+                  type="text"
+                  name="city"
+                  id="city"
+                  pattern="[A-Za-z]{4}"
+                  style="width: 80%;"
+                />
+              </div>
+              <div style="float: left; width: 35%;">
+                <span style="color: black; font-size: 13px;">Phone Number</span
+                ><br />
+                -
+                <input
+                  type="text"
+                  name="phon"
+                  id="phone"
+                  pattern="[0-9]{11}"
+                  style="width: 80%;"
+                />
+              </div>
+            </td>
+          </tr>
+
+          <tr>
+            <td class="w50" style="text-align: right;">
+              <label for="phone">Mobile Phone:<span>*</span></label>
+            </td>
+            <td><input type="tel" name="phone" id="" style="width: 60%;" /></td>
+          </tr>
+
+          <tr>
+            <td class="w50" style="text-align: right;">
+              <label for="add">Your Postal address:<span>*</span></label>
+            </td>
+            <td><textarea name="add" id="" cols="40" rows="5"></textarea></td>
+          </tr>
+
+          <tr>
+            <td class="w50" style="text-align: right;">
+              <label for="country">Country:<span>*</span></label>
+            </td>
+            <td>
+              <select id="country" name="country">
+                <option value="Afganistan" disabled selected
+                  >--------------- Selcet One ---------------</option
+                >
+                <option value="Afganistan">Afghanistan</option>
+                <option value="Albania">Albania</option>
+                <option value="Algeria">Algeria</option>
+                <option value="American Samoa">American Samoa</option>
+                <option value="Andorra">Andorra</option>
+                <option value="Angola">Angola</option>
+                <option value="Anguilla">Anguilla</option>
+                <option value="Antigua & Barbuda">Antigua & Barbuda</option>
+                <option value="Argentina">Argentina</option>
+                <option value="Armenia">Armenia</option>
+                <option value="Aruba">Aruba</option>
+                <option value="Australia">Australia</option>
+                <option value="Austria">Austria</option>
+                <option value="Azerbaijan">Azerbaijan</option>
+                <option value="Bahamas">Bahamas</option>
+                <option value="Bahrain">Bahrain</option>
+                <option value="Bangladesh">Bangladesh</option>
+                <option value="Barbados">Barbados</option>
+                <option value="Belarus">Belarus</option>
+                <option value="Belgium">Belgium</option>
+                <option value="Belize">Belize</option>
+                <option value="Benin">Benin</option>
+                <option value="Bermuda">Bermuda</option>
+                <option value="Bhutan">Bhutan</option>
+                <option value="Bolivia">Bolivia</option>
+                <option value="Bonaire">Bonaire</option>
+                <option value="Bosnia & Herzegovina"
+                  >Bosnia & Herzegovina</option
+                >
+                <option value="Botswana">Botswana</option>
+                <option value="Brazil">Brazil</option>
+                <option value="British Indian Ocean Ter"
+                  >British Indian Ocean Ter</option
+                >
+                <option value="Brunei">Brunei</option>
+                <option value="Bulgaria">Bulgaria</option>
+                <option value="Burkina Faso">Burkina Faso</option>
+                <option value="Burundi">Burundi</option>
+                <option value="Cambodia">Cambodia</option>
+                <option value="Cameroon">Cameroon</option>
+                <option value="Canada">Canada</option>
+                <option value="Canary Islands">Canary Islands</option>
+                <option value="Cape Verde">Cape Verde</option>
+                <option value="Cayman Islands">Cayman Islands</option>
+                <option value="Central African Republic"
+                  >Central African Republic</option
+                >
+                <option value="Chad">Chad</option>
+                <option value="Channel Islands">Channel Islands</option>
+                <option value="Chile">Chile</option>
+                <option value="China">China</option>
+                <option value="Christmas Island">Christmas Island</option>
+                <option value="Cocos Island">Cocos Island</option>
+                <option value="Colombia">Colombia</option>
+                <option value="Comoros">Comoros</option>
+                <option value="Congo">Congo</option>
+                <option value="Cook Islands">Cook Islands</option>
+                <option value="Costa Rica">Costa Rica</option>
+                <option value="Cote DIvoire">Cote DIvoire</option>
+                <option value="Croatia">Croatia</option>
+                <option value="Cuba">Cuba</option>
+                <option value="Curaco">Curacao</option>
+                <option value="Cyprus">Cyprus</option>
+                <option value="Czech Republic">Czech Republic</option>
+                <option value="Denmark">Denmark</option>
+                <option value="Djibouti">Djibouti</option>
+                <option value="Dominica">Dominica</option>
+                <option value="Dominican Republic">Dominican Republic</option>
+                <option value="East Timor">East Timor</option>
+                <option value="Ecuador">Ecuador</option>
+                <option value="Egypt">Egypt</option>
+              </select>
+            </td>
+          </tr>
+
+          <tr>
+            <td class="w50" style="text-align: right;">
+              <label for="pass">Password:<span>*</span></label>
+            </td>
+            <td><input type="password" name="pass" id="" /></td>
+          </tr>
+          <tr>
+            <td class="w50" style="text-align: right;">
+              <label for="pass">Re - Enter Password:<span>*</span></label>
+            </td>
+            <td><input type="password" name="pass" id="" /></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td>
+              <input type="checkbox" /> I accept the
+              <a href="#">Terms of Use</a>
+            </td>
+          </tr>
+
+          <tr>
+            <td></td>
+            <td>
+              <input
+                type="submit"
+                value="Continue >>"
+                style="margin-top: 10px; padding: 5px;"
+              />
+              <input
+                type="reset"
+                value="Reset"
+                style="margin-top: 10px; padding: 5px;"
+              />
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </form>
+
+    <div class="clr" style="clear: both;"></div>
+
+    <footer>
+      <hr />
+      <center>
+        <h4 style="color: rgb(27, 79, 235);">
+          Copyright 2021 by Khalil Abdelsalam &reg;. All Rights Reserved.
+        </h4>
+      </center>
+    </footer>
+  </body>
+</html>

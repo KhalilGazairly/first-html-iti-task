@@ -1,0 +1,56 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  background-color: rgb(65, 65, 65);
+  height: 74px;
+}
+header ul {
+  padding-left: 0;
+}
+header ul li {
+  display: inline;
+  text-decoration: none;
+  padding: 33px 20px;
+}
+header a {
+  padding: 10px 2px;
+  text-decoration: none;
+  color: ivory;
+}
+
+header a:hover li {
+  background-color: rgb(130, 0, 28);
+}
+
+.links {
+  padding-top: 8px;
+  margin: auto;
+  float: left;
+}
+.logo {
+  padding-top: 2px;
+  padding-right: 4px;
+  float: right;
+}
+.logo img {
+  height: 70px;
+  width: 220px;
+  /* margin: auto; */
+  /* text-align: center; */
+}
+
+section {
+  /* background-color: darkkhaki; */
+  height: 79vh;
+  width: 100vw;
+}
+
+section img {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
